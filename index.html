@@ -23,14 +23,14 @@
             <div class="card-header text-center">Instructions
             </div>
             <div class="card-body">
-                <p><small>You will be given a random number at the start of the game. There are four crystals below.
-                        clicking on a crystl will add a specific amount of points to your total score.
-                        When the player clicks on a crystal, it will add a specific amount of points to the player's
-                        total score.
-                        The value of each crystal will be hidden until you click on it. You win if you your total score
-                        matches the random number.
-                        If your score goes above the random number, you lose.</small>
-                </p>
+                <ul><small>
+                    <li>You will be given a random number at the start of the game ("Points to Win").</li>
+                    <li>There are four crystals below, the value of each crystal will be hidden until you click on it.</li>
+                    <li>When the player clicks on a crystal, the point value of the crystal will be added to "Crystal Points Collected".</li>  
+                    <li>You win if your "Crystal Points Collected" matches "Points to Win"</li>
+                    <li>If "Cyrstal Points Collected" is higher than "Points to Win", then you lose.</li>
+                        </small>
+                </ul>
             </div>
         </div>
     </div>
@@ -40,15 +40,15 @@
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title">Points to Win</h5>
-                        <p class="card-text">50</p>
+                        <p class="card-text" id="randomNumber">50</p>
                     </div>
                 </div>
             </div>
             <div class="col mb-4">
                 <div class="card">
                     <div class="card-body">
-                        <h5 class="card-title">Your Total Points</h5>
-                        <p class="card-text">45</p>
+                        <h5 class="card-title">Crystal Points Collected</h5>
+                        <p class="card-text" id="pointsTotal">45</p>
                     </div>
                 </div>
             </div>
@@ -61,16 +61,16 @@
             <div class="card-body">
                 <div class="row text-center">
                     <div class="col mb">
-                        <img src="assets/images/gem1.png" alt="green gem">
+                        <img id="gem1" src="assets/images/gem1.png" alt="green gem">
                     </div>
                     <div class="col mb">
-                        <img src="assets/images/gem2.png" alt="blue gem">
+                        <img id="gem2" src="assets/images/gem2.png" alt="blue gem">
                     </div>
                     <div class="col mb">
-                        <img src="assets/images/gem3.png" alt="yellow gem">
+                        <img id="gem3" src="assets/images/gem3.png" alt="yellow gem">
                     </div>
                     <div class="col mb">
-                        <img src="assets/images/gem4.png" alt="red gem">
+                        <img id="gem4" src="assets/images/gem4.png" alt="red gem">
                     </div>
                 </div>
             </div>
@@ -82,7 +82,7 @@
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title">Wins</h5>
-                        <p class="card-text">0</p>
+                        <p class="card-text" id="winCount">0</p>
                     </div>
                 </div>
             </div>
@@ -90,15 +90,14 @@
                 <div class="card">
                     <div class="card-body">
                         <h5 class="card-title">Losses</h5>
-                        <p class="card-text">0</p>
+                        <p class="card-text" id="lossCount">0</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="assets/javascript/game.js"></script>
-    <script src="http://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 </body>
 
 </html>
