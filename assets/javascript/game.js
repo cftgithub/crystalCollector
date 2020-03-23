@@ -23,19 +23,25 @@ $(document).ready(function () {
     function startGame() {
 
         randomNumber = Math.floor(Math.random() * 102) + 19;
-        document.getElementById("randomNumber").innerHTML = randomNumber;
-        document.getElementById("pointsTotal").innerHTML = gameTotal;
+        $("#randomNumber").html(randomNumber);
+        $("#pointsTotal").html(gameTotal);
 
         console.log(randomNumber);
+
         gem1 = Math.floor(Math.random() * 12) + 1;
         gem2 = Math.floor(Math.random() * 12) + 1;
+        while (gem2 === gem1) {
+            gem2 = Math.floor(Math.random() * 12) + 1;
+        }
         gem3 = Math.floor(Math.random() * 12) + 1;
+        while ((gem3 === gem1) || (gem3 === gem2)) {
+            gem3 = Math.floor(Math.random() * 12) + 1;
+        }
         gem4 = Math.floor(Math.random() * 12) + 1;
-
-        console.log(gem1);
-        console.log(gem2);
-        console.log(gem3);
-        console.log(gem4);
+        while ((gem4 === gem1) || (gem4 === gem2) || (gem4 === gem3)) {
+            gem4 = Math.floor(Math.random() * 12) + 1;
+        }
+        console.log(gem1, gem2, gem3, gem4);
     }
 
     startGame();

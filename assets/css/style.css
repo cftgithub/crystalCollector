@@ -1,3 +1,48 @@
+body {
+    background-image: url("../images/ZC6WG4.jpg");
+    width: auto;
+}
+.jumbotron {
+    margin-bottom: 10px;
+    border: solid rgb(52, 9, 63) 5px;
+    padding: 30px;
+    font-family: 'Lily Script One', cursive;
+    color: rgb(52, 9, 63);
+    background-image: linear-gradient(to bottom right, #3f034dfd, #d867f150);
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+@-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #4e0448,
+       0 0 40px #4e0448, 0 0 50px #4e0448, 0 0 60px #4e0448, 0 0 70px #4e0448, 0 0 80px #4e0448;
+    }
+    
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #bb24b3, 0 0 40px #bb24b3,
+       0 0 50px #bb24b3, 0 0 60px #bb24b3, 0 0 70px #bb24b3, 0 0 80px #bb24b3, 0 0 90px #bb24b3;
+    }
+}
 img {height: 100px;
-width: 100px;
+    width: 100px;
+}
+.inst {
+    background-color: #500b5ffd;
+    color: white;
+}
+.jewels {
+    background-image: url("../images/purpleGold.jpg");
+}
+.instBgrd {
+    background-color: #db8dec7e;
+}
+.score {
+    background-color: #c919f050;
+}
+.card {
+    border: solid rgb(52, 9, 63) 5px;
+}
+.row {
+    margin-top: 15px;
 }
