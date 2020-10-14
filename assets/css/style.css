@@ -1,5 +1,6 @@
 body {
     background-image: url("../images/ZC6WG4.jpg");
+    background-size: cover;
     width: auto;
 }
 .jumbotron {
