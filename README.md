@@ -22,3 +22,6 @@ To create a fun and interactive math game designed with jQuery.
 * CSS
 * Bootstrap
 * jQuery
+
+#### Future UX Upgrades
+* Replace alert box at the end of each game with something that makes a stronger statement.
