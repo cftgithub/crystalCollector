@@ -1,7 +1,7 @@
 # Crystal Collector
 
 ### Purpose:
-To create a fun and interactive math game designed with jQuery.
+To create a fun and interactive math game designed with jQuery. [Play Crystal Collector](https://cftgithub.github.io/crystalCollector/)
 
 ### How the App Works:
    * There are four crystals displayed on the page.
