@@ -74,14 +74,14 @@ $(document).ready(function () {
     function gameResult() {
 
         if (randomNumber === gameTotal) {
-            setTimeout(function () { alert("You Win!!!") }, 10);
+            setTimeout(function () { alert("You Win!!! Play again?") }, 10);
             wins = wins + 1;
             document.getElementById("winCount").innerHTML = wins;
             gameTotal = 0;
             setTimeout(function () { startGame() }, 11);
         } else if
             (randomNumber < gameTotal) {
-            setTimeout(function () { alert("You collected too many Crystal Points!!!") }, 10);
+            setTimeout(function () { alert("You collected too many Crystal Points!!! Try again?" ) }, 10);
             losses = losses + 1;
             document.getElementById("lossCount").innerHTML = losses;
             gameTotal = 0;
